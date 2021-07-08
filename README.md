@@ -1,1 +1,0 @@
-# mgfogerson.github.io
