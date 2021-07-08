@@ -1,0 +1,47 @@
+.table_responsive {
+    overflow:hidden;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height:500px;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+    }
+.table-wrapper-scroll-y {
+display: block;
+    }
+
+h1 {
+    color:royalblue;
+}
+
+table{
+    background-color: lightgray;
+  }
+
+p{
+  text-align: center;
+    font-style: italic;
+}
+nav.navbar {
+    background: gray !important;
+    
+  }
+  .navbar a.navbar-brand {
+    color: white;
+  }
+  .navbar a.navbar-brand:hover {
+    color: aqua;
+  }
+  /* change navbar background on collapse */
+@media(max-width: 768px) {
+    nav.navbar {
+      background: burlywood !important;
+    }
+}
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:100px;
+}

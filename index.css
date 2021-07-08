@@ -1,0 +1,38 @@
+h1 {
+    color:royalblue
+}
+html{
+  background-color: lightblue;  
+}
+body{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: gra;
+}
+nav.navbar {
+    background: gray !important;
+    
+  }
+  .navbar a.navbar-brand {
+    color: white;
+  }
+  .navbar a.navbar-brand:hover {
+    color: aqua;
+  }
+.w3-container {
+    margin-right: 30%;
+}
+  /* change navbar background on collapse */
+@media(max-width: 768px) {
+    nav.navbar {
+      background: burlywood !important;
+    }
+}
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:100px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
