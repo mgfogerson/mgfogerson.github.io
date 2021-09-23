@@ -1,0 +1,142 @@
+//projects page-specific
+
+
+
+#my-jumbo{
+      height: 10%;
+      border:10px solid #003366;
+      align-content: center;
+      background-color: lightgray;
+    }
+
+#textchild{
+  text-align: center;
+  font-style: italic;
+}
+
+#projecttitle{
+  font-weight: bold;
+  text-align: center;
+}
+
+#projectintrop{
+  font-style: italic;
+  text-align: center;
+}
+
+#infop{
+  margin-top: 50%;
+  font-style: italic;
+}
+
+
+#childdiv{
+  height: 800px;
+}
+
+.legend {
+  line-height: 12px;
+  color: #555;
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  border-radius: 2px;
+  border-color: black, 0.7;
+  border-style: solid;
+  
+}
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.carousel-inner{
+  height: 800px;
+}
+
+.aText {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-anchor: middle;
+}
+
+.active {
+  font-weight: bold;
+  fill: #000;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  fill: #c9c9c9;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill: #000;
+  cursor: pointer;
+}
+
+.stateText {
+  font-family: sans-serif;
+  fill: #fff;
+  text-anchor: middle;
+}
+
+
+.chart {
+  display: block;
+  margin: 0;
+  background-color: white;
+}
+
+.d3-tip {
+  display: inline-block;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1;
+  line-height: 1.5em;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+
+.svg{
+  display: block;
+  margin: auto;
+  background-color: white;
+}
+
+
+//hmpg specific
+
+#skillslist{
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.card-img{
+  width: 100%;
+  height:  100%;
+  object-fit: cover;}

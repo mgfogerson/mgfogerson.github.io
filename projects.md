@@ -1,0 +1,6 @@
+---
+layout: projects
+title: Projects
+---
+<h1 id="projecttitle">My Projects</h1>
+<p id = "projectintrop">A collection of my data projects with descriptions of each. Select a project from the dropdown in the corner. A short description will appear beneath the main panel.</p>

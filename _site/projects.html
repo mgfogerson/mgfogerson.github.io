@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Projects</title>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light">
+  <div class="container">
+    <a href="#" class="navbar-brand">
+      <h3 class="text-primary">Galen Fogerson</h3>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/projects/" class="nav-link">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <hr>
+    <div class = "jumbotron jumbotron-fluid" id="my-jumbo">
+                <div class = "container">
+                    <!-- this div is replaced with current project -->
+                    <div id = "childdiv">
+                        <h1 id="projecttitle">My Projects</h1>
+<p id="projectintrop">A collection of my data projects with descriptions of each. Select a project from the dropdown in the corner. A short description will appear beneath the main panel.</p>
+
+                    </div>
+                </div>
+    </div>
+<hr>
+<div class="fixed-bottom">
+    <div class="dropup">
+        <button class="btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Project
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" id="button1" href="#">Web Mapping With Leaflet</a></li>
+            <li><a class="dropdown-item" id="button2" href="#">Charting With D3</a></li>
+            <li><a class="dropdown-item" id="button3" href="#">Data Analysis With Python</a></li>
+            <li><a class="dropdown-item" id="button4" href="#">Tableau Workbook</a></li>
+        </ul>
+        </div>
+</div>
+<div class = "textParent">
+    <p id="textchild">Check in later for more projects!</p>
+</div>
+<!-- d3 -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+<!-- leaflet-->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<!-- my scripts -->
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/selector.js"></script>
+<div id = "scriptreplace">
+    <div id="scriptChild"></div>
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class ="container">
+        <p class="text-muted" style = "text-align: center; word-spacing: 5rem;">
+            <a href ="https://github.com/mgfogerson/">Github</a>  
+            <a href = "https://www.linkedin.com/in/galen-fogerson/">LinkedIn</a>    
+            <a href = "mailto:mgfogerson@gmail.com">Contact</a>    
+     
+            </span>
+    </div>
+</footer>
+
+
+</body>
+</html>
