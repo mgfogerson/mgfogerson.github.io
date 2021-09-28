@@ -1,4 +1,8 @@
-#my-jumbo { height: 10%; border: 10px solid #003366; align-content: center; background-color: lightgray; }
+#my-jumbo { border: 10px solid #003366; align-content: center; background-color: #00336662; height: 65rem; }
+
+#childdiv { height: 60rem; width: 100%; align-content: center; }
+
+.tabClass { height: 80rem !important; }
 
 #textchild { text-align: center; font-style: italic; }
 
@@ -8,7 +12,7 @@
 
 #infop { margin-top: 50%; font-style: italic; }
 
-#childdiv { height: 800px; }
+.insertDiv { height: 50rem; }
 
 .legend { line-height: 12px; color: #555; padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); border-radius: 5px; }
 
@@ -17,8 +21,6 @@
 .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); border-radius: 5px; }
 
 .info h4 { margin: 0 0 5px; color: #777; }
-
-.carousel-inner { height: 800px; }
 
 .aText { font-family: sans-serif; font-size: 16px; text-anchor: middle; }
 
@@ -30,14 +32,26 @@
 
 .stateText { font-family: sans-serif; fill: #fff; text-anchor: middle; }
 
-.chart { display: block; margin: 0; background-color: white; }
+.chart { margin: 0; background-color: white; }
 
 .d3-tip { display: inline-block; padding: 6px; font-size: 12px; line-height: 1; line-height: 1.5em; color: #fff; text-align: center; text-transform: capitalize; background: rgba(0, 0, 0, 0.8); border-radius: 4px; }
 
 .svg { display: block; margin: auto; background-color: white; }
 
+.svgText { pointer-events: none; }
+
+.axisText { font-weight: bolder; }
+
+#viz1632788409180 { height: 50rem; }
+
 #skillslist { max-height: 300px; overflow-y: scroll; }
 
 .card-img { width: 100%; height: 100%; object-fit: cover; }
+
+#skillsheader { font-weight: bold; font-family: FreeMono, monospace; }
+
+hr.tophr { border: 5px solid #003366; opacity: 100%; }
+
+#navName { font-weight: bold; color: #003366 !important; font-family: Arial, Helvetica, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

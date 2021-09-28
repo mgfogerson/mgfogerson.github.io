@@ -1,3 +1,6 @@
+//cloning the div for Tableau
+var tabviewDiv = "<div class='tableauPlaceholder' id='viz1632788409180' style='position: relative;'><noscript><a href='#'><img alt='Citibike Data Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CH&#47;CH7RK7M38&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;CH7RK7M38' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CH&#47;CH7RK7M38&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632788409180');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"
+var tabhtml = jQuery.parseHTML(tabviewDiv)
 
 
 function firstSelect(){
@@ -60,7 +63,7 @@ function thirdSelect(){
     // div selector
     var pyDiv = document.createElement("embed");
     pyDiv.id = "childdiv";
-    pyDiv.src = "/assets/images/Pymoli_Notebook.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    pyDiv.src = "/assets/images/Pymaceuticals.pdf#toolbar=0&navpanes=0&scrollbar=0"
     pyDiv.style = "width: 100%; "
     var d1 = document.getElementById("childdiv");
     var parentDiv = d1.parentNode;
@@ -84,13 +87,18 @@ function fourthSelect(){
     var scriptParent = s1.parentNode;
     scriptParent.replaceChild(scriptDiv, s1)
     // div selector
-    var tabDiv = document.createElement("embed");
-    tabDiv.id = "childdiv";
-    tabDiv.style = "width: 100%"
-    tabDiv.src = "https://public.tableau.com/shared/9G7X35HMW?:display_count=n&:origin=viz_share_link"
+    var tabDiv = document.createElement("div");
+    tabDiv.id = "childdiv"
+    tabDiv.class = "tabClass"
+    var insertDiv = document.createElement("div");
+    insertDiv.class = "insertDiv"
     var d1 = document.getElementById("childdiv");
     var parentDiv = d1.parentNode;
     parentDiv.replaceChild(tabDiv, d1);
+    tabDiv.appendChild(insertDiv)
+    $(insertDiv).replaceWith(tabviewDiv)
+
+    //text selectorx
     var textDiv=document.createElement("div")
     textDiv.id="textchild"
     textDiv.innerText= "This Tableau workbook seeks to break down and understand trends in the riders of Jersey City's Citibike program. It uses data collected from 2017-2020 to chart demographic changes, station usage and peak riding times from month down to hour."

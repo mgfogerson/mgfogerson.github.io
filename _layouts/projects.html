@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>{{page.title}}</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -18,32 +20,42 @@
     </head>
 <body>
     {% include navigation.html %}
+    <hr class="tophr">
+    <div class = "row">
+        <div class = "col-md-1">
+                <div class="sticky-top">
+                    <div class="dropdown" id = "myDropdown">
+                        <button class="btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Project
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" id="button1" href="#">Web Mapping With Leaflet</a></li>
+                            <li><a class="dropdown-item" id="button2" href="#">Charting With D3</a></li>
+                            <li><a class="dropdown-item" id="button3" href="#">Data Analysis With Python</a></li>
+                            <li><a class="dropdown-item" id="button4" href="#">Tableau Workbook</a></li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+            <div class = "col-md-1">
+
+            </div>
+            <div class = "col-md-10">
+                <div class = "textParent">
+                    <p id = "textchild">This Leaflet map uses geoJson data from the USGS to chart every significant earthquake of the last month by location, magnitude and depth. It also features an overlay of the tectonic plates to demonstrate how earthquakes occur at these borders, and the differences in depth and frequency between plate boundaries.</p>
+                </div>
+            </div>
+    </div>
+
     <hr>
-    <div class = "jumbotron jumbotron-fluid" id="my-jumbo">
+    <div class = "jumbotron" id="my-jumbo">
                 <div class = "container">
                     <!-- this div is replaced with current project -->
                     <div id = "childdiv">
-                        {{content}}
-                    </div>
+                    </div> 
                 </div>
     </div>
 <hr>
-<div class="fixed-bottom">
-    <div class="dropup">
-        <button class="btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Project
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" id="button1" href="#">Web Mapping With Leaflet</a></li>
-            <li><a class="dropdown-item" id="button2" href="#">Charting With D3</a></li>
-            <li><a class="dropdown-item" id="button3" href="#">Data Analysis With Python</a></li>
-            <li><a class="dropdown-item" id="button4" href="#">Tableau Workbook</a></li>
-        </ul>
-        </div>
-</div>
-<div class = "textParent">
-    <p id="textchild">Check in later for more projects!</p>
-</div>
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -54,9 +66,11 @@ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUT
 crossorigin=""></script>
 <!-- my scripts -->
 <script src="/assets/js/config.js"></script>
-<script src="/assets/js/selector.js"></script>
+<script src="/assets/js/selector.js" defer></script>
 <div id = "scriptreplace">
-    <div id="scriptChild"></div>
+    <div id="scriptChild">
+        <script src = "/assets/js/logic.js"></script>
+    </div>
 </div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
