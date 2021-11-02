@@ -1,22 +1,24 @@
 
-var svgWidth = 850;
-var svgHeight = 650;
+var svgWidth = 750;
+var svgHeight = 500;
 
 var margin = {
-  top: 110,
+  top: 100,
   right: 10,
-  bottom: 100,
-  left: 100
+  bottom: 70,
+  left: 90
 };
 
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
 // Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
-var svg = d3.select("#childdiv")
+var svg = d3.select("#scriptdiv")
   .append("svg")
-  .attr("width", svgWidth)
-  .attr("height", svgHeight);
+  // .attr("width", svgWidth);
+  // .attr("height", svgHeight);
+  .attr("viewBox", `0 0 800 800`);
+
 
   svg.append("rect")
     .attr("width", svgWidth)
@@ -69,7 +71,7 @@ d3.csv("https://raw.githubusercontent.com/mgfogerson/my_csv/main/data.csv").then
     chartGroup.append("text")
     // Position the text
     // Center the text:
-    .attr("transform", `translate(${width / 2}, ${height + margin.bottom -50})`)
+    .attr("transform", `translate(${width / 2}, ${height + margin.bottom - 15})`)
     .attr("text-anchor", "middle")
     .attr("font-size", "25px")
     .attr("class", "axisText")

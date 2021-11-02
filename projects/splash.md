@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: project_splash
 title: Projects
 ---
 <h1 id="projecttitle">My Projects</h1>

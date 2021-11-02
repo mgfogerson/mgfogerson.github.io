@@ -3,7 +3,7 @@ var quakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_mo
 var plateData = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
 //create my map, center over west coast NA
-var mymap = L.map('childdiv').setView([0,0], 2);
+var mymap = L.map('map').setView([0,0], 2);
 var tectonicPlates = new L.LayerGroup();
 
 //create tilelayer, add to mymap

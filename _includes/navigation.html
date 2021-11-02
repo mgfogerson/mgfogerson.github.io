@@ -1,20 +1,25 @@
-<nav class="navbar navbar-expand-md" style="background-color: #0033667a;">
-  <div class="container">
-    <a href="#" class="navbar-brand">
-      <h3 class="text-primary" id ="navName">Galen Fogerson</h3>
+<nav>
+  
+</nav>
+
+<nav class="navbar navbar-expand navbar-dark bg-white mb-3">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
+    >
+    <span class="navbar-brand mb-0 h1" id="mybrand">Galen Fogerson</span>
+      <!-- Left links -->
+      {% for item in site.data.navigation %}
+    <a class = "btn px-2 mx-1 btn-outline-primary" href="{{ item.link }}" id="navbuttons">
+      {{ item.name }}
     </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="{{ site.index }}/" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ site.index }}/projects" class="nav-link">Projects</a>
-        </li>
-      </ul>
+      {% endfor %}
+      <!-- Left links -->
     </div>
+    <!-- Collapsible wrapper -->
   </div>
+  <!-- Container wrapper -->
 </nav>

@@ -1,0 +1,4 @@
+I"q<h1 style="text-align: center;">Quake Map</h1>
+<p>This Leaflet map uses geoJson data from the USGS to chart every significant earthquake of the last month by location, magnitude and depth. It also features an overlay of the tectonic plates to demonstrate how earthquakes occur at these borders, and the differences in depth and frequency between plate boundaries.
+</p>
+:ET
