@@ -1,4 +1,0 @@
-I"><h1 s="" id="projecttitle">Pymaceutical Python Analysis</h1>
-<p id="projectp">This Jupyter Notebook breaks down the results of a medical trial by merging and cleaning two CSV's containing mouse and medication dosage information. The effect of each medication on tumor volume was then charted, including finding the degree of correlation between the top performing drug and reduction in tumor volume. This charting revealed the most statistically viable medication option, and was completed with Pandas' built-in charts as well as Matplotlib's more specialized charts. 
-</p>
-:ET

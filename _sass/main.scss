@@ -1,7 +1,13 @@
-//hmpg specific
+//Homepage specific
+
+#samplesCard{
+background-color: #c8d8e4;
+height: 100%;
+width: 100%
+}
 
 #skillslist{
-  max-height: 300px;
+  height: 100%;
   overflow-y: scroll;
   background-color: #c8d8e4 !important;
 }
@@ -18,8 +24,7 @@
   border-color: #52ab98;
   margin: auto;    
   display: block;
-  height: 400px;
-  width: 400px ;
+  width: 80%;
 }
 
 #skillsheader{
@@ -30,20 +35,20 @@
 }
 
 #listimage{
-  height: 8rem;
-  margin: auto;
+  height: 5rem;
 }
 
 #myintro{
   color: white;
 }
-//project-specific
+
+//Project-specificr
 
 #scriptdiv{
   border:10px solid #003366;
   justify-content: center;
-  height: 50rem;
-  width: 60rem; 
+  height: 100%;
+  width: 100%; 
   background-color: #f2f2f2;
   }
 
@@ -56,9 +61,11 @@
 
 
 #projecttitle{
+  margin-top: 5rem;
   font-weight: bold;
   text-align: center;
   color: white;
+  font-size: 15;
 }
 
 #categoryHeading{
@@ -66,6 +73,7 @@
   margin: auto;
   background-color: #52ab98;
   border-radius: 50rem;
+  width: 100%;
 }
 
 #categoryCard{
@@ -120,14 +128,29 @@ body{
   background-size: cover;
   /* background by SVGBackgrounds.com */
 }
-
-
-
-//responsive rules
-@media only screen and (max-width: 450px){
-  #scriptdiv { width: 90%;
-  height: 90%;
-  }
-  #map { width: 90%; }
-
+#navBar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
+  margin-bottom: 3rem;
 }
+
+
+#footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+}
+
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  }
+
+.card-title{
+  font-size: 100% !important;
+}
+
