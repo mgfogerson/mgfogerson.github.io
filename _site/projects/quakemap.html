@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Quake Map</title>
 <!-- jquery -->
@@ -53,7 +53,7 @@
 <p id="projectp">This Leaflet map uses GeoJSON data from the USGS to chart every significant earthquake of the last month by location, magnitude and depth. It also features an overlay of the tectonic plates to demonstrate how earthquakes occur at these borders, and the differences in depth and frequency at different plate boundaries. For instance, the earthquakes in the "Ring of Fire" faultlines in the Eastern Pacific are much deeper on average than earthquakes on the U.S' West coast.
 </p>
 
-<p><button href="https://github.com/mgfogerson/leaflet_quakemap" class="btn btn-lg btn-primary" id="gitLink">  Go to Github Repo </button></p>
+<p><a href="https://github.com/mgfogerson/leaflet_quakemap" class="btn btn-lg btn-primary" id="gitLink">  Go to Github Repo </a></p>
 
     </div>
 </div>
@@ -76,7 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Footer -->
-<footer class="footer mt-3 py-3 bg-light" id="footer">
+<footer class="footer mt-5 py-3 bg-light" id="footer">
     <div class ="container">
         <p class="text-muted" style = "text-align: center; word-spacing: 5rem;">
             <a href ="https://github.com/mgfogerson/">Github</a>  
@@ -89,6 +89,11 @@
 
 
   <style>
+
+#navBar{
+  z-index: 1 !important;
+}
+
 .legend {
   line-height: 12px;
   color: #555;

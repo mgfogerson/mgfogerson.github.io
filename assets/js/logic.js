@@ -6,10 +6,35 @@ var plateData = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/
 var mymap = L.map('map').setView([0,0], 2);
 var tectonicPlates = new L.LayerGroup();
 
+function setInitialMapZoom() {
+
+  var viewportWidth = window.innerWidth;
+
+  var mapZoom;
+
+  if (viewportWidth < [576]) {
+
+   mapZoom = [3];
+
+}  else if (viewportWidth >= [768] && viewportWidth < [992]) {
+
+   mapZoom = [6];
+
+}  else {
+
+   mapZoom = [15];
+
+}
+
+return mapZoom;
+
+}
+
 //create tilelayer, add to mymap
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
+    zoom: setInitialMapZoom(),
+    interactive: true,
     id: 'mapbox/light-v9',
     tileSize: 512,
     zoomOffset: -1,
@@ -66,3 +91,5 @@ d3.json(quakeUrl).then(function(data){
 d3.json(plateData).then(function(quakedata){
   L.geoJson(quakedata).addTo(mymap);
 });
+
+
