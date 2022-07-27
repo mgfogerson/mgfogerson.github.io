@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{page.title}}</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{page.title}}</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
-    <!-- bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    {% include navigation.html %}
-    <div class ="container">
-        <div class = "row justify-content-md-center">
-            <div class = "col-8" style="align-content: center;">
-              <h1 id="projecttitle">Project Types</h1>
-                <div class="accordion" id="accordionExample">
-                    <div class="card my-1" id="categoryCard">
-                      <div class="card-header" id="categoryHeading" style="display: block; margin: auto;">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="categoryTitle">
-                            Python 
-                            <br>
-                            <img src="/assets/images/pythonLogo.svg" id="listimage">
-                        </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseOne" class="collapse" >
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="{{ site.index }}/projects/pymaceutical">Pymaceutical Python Analysis</a></li>
-                              </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card my-1" id="categoryCard">
-                      <div class="card-header" id="categoryHeading">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="categoryTitle">
-                            JavaScript 
-                            <br>
-                            <img src="/assets/images/JavaScript_logo.svg" id="listimage">
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="{{ site.index }}/projects/plotlyviz">Plotly Biodiversity Dashboard</a></li>
-                                <li class="list-group-item"><a href="{{ site.index }}/projects/quakemap">Leaflet Earthquake Map</a></li>
-                                <li class="list-group-item"><a href="{{ site.index }}/projects/d3statechart">D3 Census Analysis</a></li>
-                              </ul>            
-                            </div>
-                      </div>
-                    </div>
-                    <div class="card my-1" id="categoryCard">
-                      <div class="card-header" id="categoryHeading">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="categoryTitle">
-                            Tableau
-                            <br>
-                            <img src="/assets/images/tableau-software.svg" id="listimage">
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="{{ site.index }}/projects/citibikeviz.html">Citibike Analysis</a></li>
-                              </ul>            
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+  <div class="container mb-4">
+    <div class="row" style="margin-bottom: 7%;">
+      {% include navigation.html %}
     </div>
-    
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
       
+        <div class="card border-primary text-center mx-5" style="width: 20rem; background-color: rgba(128, 128, 128, 0.8);">
+          <div class="card-body">
+            <h5 class="card-title">Citibike KPI Dashboard</h5>
+
+            <img src="/assets/images/citibikeviz_preview.png" class="card-img-top" alt="...">
+            <div class="overlay">
+              <a href="{{ site.index }}/portfolio/citibikeviz.html">
+                <div class="text">Click To View</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card border-primary text-center mx-5" style="width: 20rem; background-color: rgba(128, 128, 128, 0.8);">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript Interactive Mapping</h5>
+
+            <img src="/assets/images/quakemap_preview.png" class="card-img-top" alt="...">
+            <div class="overlay">
+              <a href="{{ site.index }}/portfolio/quakemap">
+                <div class="text">Click To View</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card border-primary text-center mx-5" style="width: 20rem; background-color: rgba(128, 128, 128, 0.8);">
+          <div class="card-body">
+            <h5 class="card-title">JSON-Based Web Dashboard</h5>
+
+            <img src="/assets/images/plotlyviz_preview.png" class="card-img-top" alt="...">
+            <div class="overlay">
+              <a href="{{ site.index }}/portfolio/plotlyviz">
+                <div class="text">Click To View</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      
+
+    </div>
+    <div class="row justify-content-center" style="margin-top: 5%;">
+      <div class="card border-primary text-center mx-5" style="width: 20rem; height:20rem; background-color: rgba(128, 128, 128, 0.8);">
+        <div class="card-body">
+          <h5 class="card-title">Portland Monthly Data Article</h5>
+
+          <img src="/assets/images/article_preview.png" class="card-img-top" alt="..." style="height: 15rem">
+          <div class="overlay">
+            <a href="https://www.pdxmonthly.com/news-and-city-life/2020/01/complaining-about-the-influx-of-californians-is-basically-oregon-s-favorite-pastime" >
+              <div class="text">Click To View</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  <div class = "row" style="margin-top: 10%;">
     {% include Footer.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

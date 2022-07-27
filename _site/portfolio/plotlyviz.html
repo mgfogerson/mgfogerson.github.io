@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plotly Visualization</title>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>#navbar {z-index: 1 !important;} </style>
+</head>
+
+<body onload="init()">
+    <div class = "container">
+        <div class = "row" style="padding-bottom: 3%;">
+            <nav class="navbar fixed-top navbar-expand-lg" id="navBar">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse"
+      id="navbarCenteredExample"
+    >
+    <span class="navbar-brand mb-0 h1" id="mybrand">Galen Fogerson</span>
+      <!-- Left links -->
+      
+    <a class = "btn px-2 mx-1 btn-outline-primary" href="/" id="navbuttons">
+      Home
+    </a>
+      
+    <a class = "btn px-2 mx-1 btn-outline-primary" href="/portfolio/splash" id="navbuttons">
+      Portfolio
+    </a>
+      
+    <a class = "btn px-2 mx-1 btn-outline-primary" href="/about/about-me" id="navbuttons">
+      About
+    </a>
+      
+    <a class = "btn px-2 mx-1 btn-outline-primary" href="/blog.html" id="navbuttons">
+      Blog
+    </a>
+      
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class ="row justify-content-center">
+            <div class = "col-md-6">
+                <div class = "jumbotron text-center" id="display_jumbo">
+                    <h1 id="projecttitle">Plotly Biodiversity Dashboard</h1>
+<p id="projectp">This interactive Plotly dashboard is written in Javascript and charts the individual results of a trial on the biodiversity of test subjects' bellybuttons. Bateria types are measured in OTU's, which defines closely related groups of individuals. These charts populate with the 10 most common OTU families, charting their relative frequency on the bar and bubble charts. A new patient can be chosen by selecting their ID with the selector on the top left. Their demographic information occupies the left panel, and the gauge tracks the number of times they washed their navel during the trial. This dashboard has style changes not found in the original repo.</p>
+
+<p><a href="https://github.com/mgfogerson/plotly_bacteriaChart" class="btn btn-lg btn-primary" id="gitLink"> Go to Github Repo </a></p>
+
+                </div>
+            </div>        
+        <div class="pb-5 row justify-content-center">
+            <div class="col-md-2">
+                
+            <div class="col-lg-5">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+                <div id="bar"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="background-color: rgba(134,134,134,0.5); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Select Patient ID</h5>
+                        <select id="selDataset" onchange="getData(this.value)">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgba(134,134,134,0.5); color: white;">
+                    <div class="card-body">
+                        <h3 class="card-title">Demographic Info</h3>
+                        <div id="sample-metadata" class="card-body">
+                            <h6 id="idinfo">ID: </h5>
+                            <h6 id="ageinfo">Age: </h5>
+                            <h6 id="locationinfo">Location: </h5>
+                            <h6 id="bbtypeinfo">Blood Type: </h5>
+                            <h6 id="ethnicityinfo">Ethnicity: </h5>
+                            <h6 id="genderinfo">Gender: </h5>
+                            <h6 id="wfreqinfo">Washing Frequency: </h5>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        
+    </div>
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div id="bubble"></div>
+        </div>
+        <div class="col-md-3">
+            <div id="gauge"></div>
+        </div>
+        </div>
+    </div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="/assets/js/plotlyviz.js"></script>
+  <style></style>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

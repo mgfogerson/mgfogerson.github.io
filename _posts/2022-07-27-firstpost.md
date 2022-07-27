@@ -1,0 +1,7 @@
+---
+layout: blogpost
+author: Galen
+---
+<p>Today, I'm finishing and pushing to live a whole slew of changes to my website, including this blog feature. I'm excited for the potential of this site to become more streamlined than it has been before, and to become a place that quickly communicates the skillsets I picked up with the University of Oregon's Data Analysis program. However, as soon as I began to dig around in the HTML and Jekyll formatting I'd built the site in, I realized just working on this, so far after I'd had any official HTML assignments, was going to be a milestone of its own. The same goes for my SQL, JavaScript and Python skills, which I've at least been honing on Codecademy in the interim. I'm hoping to have new blog posts weekly that chronicle new projects, show off my evolving skills, and act as milestones for me to look back on.<br><br>
+
+The first lesson I'm definitely learning is the presence of scope creep - as I work on this site, there's so much possible improvement I can see, and yet my time between work, vacation and constantly searching for a new analyst job makes it hard to add everything I want. One of my first orders of business is going to be taking advantage of this site being made in Jekyll, and program a loop to automatically output the preview cards for each portfolio project. This should keep the site clean and stylistically unified, which I didn't feel my last try at the portfolio took into account.</p>
